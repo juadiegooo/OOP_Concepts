@@ -1,6 +1,6 @@
 package domain.model;
 
-public class Shape {
+public abstract class Shape {
     public int x=0;
     public int y=0;
     public Shape (int newX, int newY){//el metodo no debe tener la misma firma, cambiar el tipo de dato y orden
@@ -22,5 +22,9 @@ public void setY(int newY){
 public int getY(){
 return y;
 }
+
+public abstract int getArea();
+public abstract int getPerimeter();
+
 }
 
