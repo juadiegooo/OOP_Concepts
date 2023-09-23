@@ -11,14 +11,17 @@ public abstract class Shape {
     public void setX(int newX){
         if(newX>=0&&newX<=1000){
             x = newX;
-        }}
+        }
+    }
 public int getX(){
-    return x;}
+    return x;
+}
 
 public void setY(int newY){
     if(newY>=0&&newY<=1000){
         y = newY;
-    }}
+    }
+}
 public int getY(){
 return y;
 }
