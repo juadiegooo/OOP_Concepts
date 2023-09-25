@@ -27,6 +27,15 @@ public class Circle extends Shape{
         return (int)(2*Math.PI*getRadius()) ; //multiplicacion de pi por perimetro
     }
 
+    public Circle(int newX, int newY, int newRadius){
+        super(newX, newY); //El super sirve para llamar a la clase padre
+        setRadius(newRadius);
+    }
+
+    public Circle(int newRadius){
+        this (0,0,newRadius);
+    }
+
     public Circle(int newX, int newY) {
         super(newX, newY);
         //TODO Auto-generated constructor stub

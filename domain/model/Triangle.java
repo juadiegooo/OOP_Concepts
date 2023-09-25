@@ -45,7 +45,18 @@ public class Triangle extends Shape{
     public int getPerimeter(){
         return getSideSiza1()+getSideSiza2()+getSideSiza3();
     }
-    
+
+    public Triangle(int newX, int newY, int newSideSize1, int newSideSize2, int newSideSize3){
+        super(newX, newY); //El super sirve para llamar a la clase padre
+        setSideSiza1(newSideSize1);
+        setSideSiza2(newSideSize2);
+        setSideSiza3(newSideSize3);
+    }
+
+    public Triangle(int newSideSize1, int newSideSize2, int newSideSize3){
+        this(0, 0, newSideSize1, newSideSize2, newSideSize3);
+    }
+
     public Triangle(int newX, int newY) {
         super(newX, newY);
         //TODO Auto-generated constructor stub

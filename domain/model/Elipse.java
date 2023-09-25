@@ -24,6 +24,15 @@ public class Elipse extends Circle{
         return (int)(2*Math.PI*Math.sqrt((Math.pow(getRadius(), 2) + Math.pow(getRadius2(), 2))/2)) ;
     }
 
+    public Elipse(int newX, int newY, int newRadius, int newRadius2){
+        super(newX, newY, newRadius); //El super sirve para llamar a la clase padre
+        setRadius2(newRadius2);
+    }
+
+    public Elipse(int newRadius2){
+        this (0,0,0, newRadius2);
+    }
+
     public Elipse(int newX, int newY) {
         super(newX, newY);
         //TODO Auto-generated constructor stub
